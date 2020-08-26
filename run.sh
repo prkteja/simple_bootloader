@@ -1,6 +1,6 @@
 #compile kernel
 echo "Compiling Kernel ..."
-gcc -m32 kernel.c -o kernel.bin -std=gnu99 -ffreestanding -O2 -masm=intel -mno-mmx -mno-80387 -fno-pic -mno-sse -mno-sse2
+gcc -m32 kernel/kernel.c -o kernel.bin -std=gnu99 -ffreestanding -O2 -masm=intel -mno-mmx -mno-80387 -fno-pic -mno-sse -mno-sse2
 
 #find kernel entry point offset
 echo "Finding Kernel offset ..."
